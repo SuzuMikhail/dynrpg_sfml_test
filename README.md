@@ -1,4 +1,4 @@
-#dynrpg_sfml_test
+# dynrpg_sfml_test
 
 
 A performance test about RPG::Image and sf::Sprite with sf::Texture
@@ -8,7 +8,7 @@ rpg_draw() and sf_draw() calls many functions to display a picture to test the p
 The test is running with [system_opengl](https://github.com/andrew-r-king/system_opengl) plugin. TestResult.jpg shows RPG::Image is faster than SFML at the first time. Btw, SFML ignored plugin's FX (Because SFML is drawing above the window)
 
 
-##If you want to test again
+## If you want to test again
 
 
 1. Create a RPG Maker 2003 project
@@ -29,4 +29,4 @@ The test is running with [system_opengl](https://github.com/andrew-r-king/system
 
 ## Disclaimer
 
-I wrote these code for test performance, and I copied many code by others to achieve it. So I didn't have any right to these code.
+I wrote these code for test performance, and I copied many code by others to achieve it. So I didn't have any copyright to these code.

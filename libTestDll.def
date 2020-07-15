@@ -1,0 +1,7 @@
+EXPORTS
+    linkVersion @1 DATA
+    onComment @2
+    onExit @3
+    onFrame @4
+    onInitTitleScreen @5
+    onStartup @6

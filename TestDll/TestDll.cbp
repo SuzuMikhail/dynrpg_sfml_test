@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="TestDll" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="../TestDll" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option parameters="TestPlay ShowTitle Window" />
+				<Option host_application="C:/Users/S/Downloads/rpg2003/Project2/RPG_RT.exe" />
+				<Option run_host_application_in_terminal="0" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add option="-DBUILD_DLL" />
+					<Add directory="D:/dw/dynrpg_0_32_02-25-2017/sdk/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="DynRPG" />
+					<Add library="D:/dw/dynrpg_0_32_02-25-2017/sdk/lib/libDynRPG.a" />
+					<Add directory="D:/dw/dynrpg_0_32_02-25-2017/sdk/include" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="cmd /c del ..*.a &amp; del ..*.def" />
+				</ExtraCommands>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-DSFML_STATIC" />
+			<Add directory="C:/SFML-2.5.0-TDM-GCC-32/include" />
+		</Compiler>
+		<Linker>
+			<Add library="DynRPG" />
+			<Add library="sfml-graphics" />
+			<Add library="sfml-window" />
+			<Add library="sfml-system" />
+			<Add library="sfml-audio" />
+			<Add library="sfml-main" />
+			<Add directory="C:/SFML-2.5.0-TDM-GCC-32/lib" />
+		</Linker>
+		<ExtraCommands>
+			<Add after="cmd /c del ..*.a &amp; del ..*.def" />
+		</ExtraCommands>
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
